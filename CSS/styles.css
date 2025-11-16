@@ -1,0 +1,495 @@
+/*
+    Author: Abdullah Motala
+    Date: 10/25/2025
+    File name: styles.css
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+section,
+aside,
+figure,
+figcaption,
+img,
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Body background */
+body {
+  background-color: #ffffff;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+/* Header */
+header {
+  text-align: center;
+  color: #373684;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+header h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5em;      /* added */
+  font-weight: bold;
+  padding: 4%;           /* added */
+  margin-right: 15%;     /* added */
+}
+header p {
+  font-size: 1.5em;
+  color: #373684;
+  margin-bottom: 0.5em;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #373684;
+  text-align: center;
+  padding: 0.75em 0; /* ✨ thicker bar to match original */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline; /* ✨ simpler spacing, more like your original layout */
+  margin: 0 1.5em; /* evenly spaces out links */
+}
+
+nav a {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5em 0; /* creates height without thick blocks */
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+/* Hero Image */
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Style rule for box sizing applies to all elements */
+*{
+  box-sizing: border-box;
+}
+/* Main Section */
+main {
+  font-family: 'Roboto', sans-serif;
+  padding: 2%;
+  background-color: #e5e9fe;
+  overflow: auto;
+  text-align: none; /* ✨ Added: ensures centered content like in the original */
+}
+
+main h2,
+main h3 {
+  color: #373684;
+}
+
+main p {
+  font-size: 1.25em;
+  line-height: 1.6em;
+}
+
+/* Highlight */
+.action {
+  font-size: 1.25em;
+  color: #393875;
+  font-weight: bold;
+}
+/* Style rules for form elements */
+
+fieldset,
+input {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 3%;
+}
+
+/* Style rule for Submit button */
+#Submit {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+  background-color: #b7b7e1;
+  font-size: 1em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  background-color: #fff;
+  color: #373684;
+  padding: 1em 0;
+  border-top: 2px solid #373684;
+}
+
+footer a {
+  color: #4645a8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Page */
+#contact,
+#rental h2 {
+  text-align: center;
+  background-color: #e5e9fe;
+  padding: 2em 0;
+}
+
+#contact h2 {
+  color: #373684;
+  margin-bottom: 0.75em;
+}
+
+#contact p {
+  font-size: 1.2em;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+#contact a {
+  color: #4645a8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+/* Fix phone number color override */
+#contact .tel-link a {
+  color: #ffffff !important;  /* force white text */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact .tel-link a:hover {
+  text-decoration: underline;
+}
+
+/* Phone link section */
+.tel-link {
+  background-color: #373684; /* dark purple-blue background */
+  padding: 1em;
+  margin: 1em auto;
+  width: 60%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.tel-link a {
+  color: #ffffff; /* ensures the phone number is visible */
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.tel-link a:hover {
+  text-decoration: underline;
+}
+
+/* Email link section */
+.email-link {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.email-link a {
+  color: #4645a8; /* purple text */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link a:hover {
+  text-decoration: underline;
+}
+
+/* Map */
+.map {
+  width: 90%;
+  max-width: 600px;
+  height: 300px; /* ✨ fixed height for better balance */
+  border: 5px solid #373684;
+  margin: 2em auto;
+  display: block; /* centers map */
+}
+
+/* Rounded Images */
+.round {
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+.tab-desk {
+  display: none;
+}
+
+/* =========================================
+   Mobile Styles
+   ========================================= */
+/* ------------------------------------ */
+/* Mobile viewport styles (steps 13–15) */
+/* ------------------------------------ */
+
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #373684;
+  text-shadow: 3px 3px 10px #8280cb;
+}
+
+figure {
+  position: relative;
+  max-width: 275px;
+  margin: 2% auto;
+  border: 8px solid #373684;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(55, 54, 132, 0.7);
+  color: #fff;
+  width: 100%;
+  padding: 5% 0;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Style Rule for table */
+table {
+  border: 1px solid #373684;
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1%;
+}
+
+th, td {
+  border: 1px solid #373684;
+  padding: 2%;
+}
+
+th {
+  background-color: #373684;
+  color: #fff;
+  font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+  background-color: #b7b7e1;
+}
+
+/* ------------------------------------ */
+/* Hide tab-desk and menu links in mobile */
+.tab-desk,
+#menu-links {
+  display: none;
+}
+
+/* INSERTED: mobile-nav styles           */
+/* ------------------------------------ */
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.menu-icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu-icon div {
+  height: 50px;
+  width: 50px;
+  background-color: #373684;
+}
+
+/* =========================================
+   Tablet Viewport
+   ========================================= */
+@media screen and (min-width: 550px), print {
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile,
+  .mobile-nav {
+    display: none;
+  }
+
+
+  /* Tablet Viewport: Style rule for header content */
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+  }
+
+  span.tab-desk {
+    display: inline;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.5em;
+    border-right: 1px solid #e5e9fc;
+  }
+
+  nav li:last-child {
+    border-right: none;
+  }
+
+  nav li a {
+    padding: 0.25em 0.5em;
+  }
+
+  /* Tablet Viewport: Style rule for map */
+  .map {
+    width: 500px;
+    height: 450px;
+  }
+/* Tablet Viewport: Style rule for form element */
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+  /* Step 16 & 17 – Grid layout for Tablet */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
+  }
+}
+/* (9–12) Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+  /* Desktop Viewport: Style rule for header */
+  header {
+    padding: 2%;
+  }
+
+  /* Desktop Viewport: Style rules for nav area */
+  nav li a {
+    padding: 0.5em 1.5em;
+  }
+
+  nav li a:hover {
+    color: #373684;
+    background-color: #e5e9fc;
+    transform: scale(1.2);
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  #info ul {
+    margin-left: 5%;
+  }
+
+  main h3 {
+    font-size: 1.5em;
+  }
+
+  #piano,
+  #guitar,
+  #violin {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+  }
+
+  /* Step 18 – 4-column grid */
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Step 19 – figcaption text size */
+  figcaption {
+    font-size: 1em;
+  }
+
+  /* Step 20 – aside spans full row */
+  aside {
+    grid-column: 1 / span 4;
+  }
+}
+/* Desktop Viewport: Style rules for table */
+table {
+  width: 70%;
+}
+/* Desktop Viewport: Style rules for form elements */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.btn {
+  grid-column: 1 / span 2;
+}
+
+/* -------------------------------------------------- */
+/* (13–14) Media Query for Print */
+/* -------------------------------------------------- */
+
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+
